@@ -2,8 +2,6 @@ package com.br.ifs.controller;
 
 import java.util.List;	
 
-//import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,9 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.br.ifs.model.Dependentes;
-//import com.br.ifs.model.Usuario;
 import com.br.ifs.service.DependenteService;
-
 
 @RestController
 @RequestMapping("/dependentes")
@@ -35,8 +31,4 @@ public class DependenteController {
 		return dependenteService.consultarDependentes(idfuncionario);
 	}
 	
-	/*@GetMapping
-	public Dependentes consultarPorParte(Usuario nome) {
-		return dependenteService.consultarPorParte(nome);
-	}*/
 }

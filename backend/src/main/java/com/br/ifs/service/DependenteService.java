@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.br.ifs.model.Dependentes;
-//import com.br.ifs.model.Usuario;
 import com.br.ifs.repository.DependenteRepository;
 
 
@@ -23,11 +22,5 @@ public class DependenteService {
 	public List<Dependentes> consultarDependentes(Dependentes idfuncionario) {
 		return dependenteRepository.findAllByIdfuncionario(idfuncionario);
 	}
-	
-	/*// Consultar Funcionário por parte do nome;
-	public Dependentes consultarPorParte(Usuario usuario) {
-		return dependenteRepository.getByNome(usuario);
-	}*/
-	
 	
 }

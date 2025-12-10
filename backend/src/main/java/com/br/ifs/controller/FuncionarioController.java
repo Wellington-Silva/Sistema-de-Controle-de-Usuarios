@@ -40,11 +40,6 @@ public class FuncionarioController {
 		return funcionarioService.inserirFuncionario(funcionario);
 	}
 	
-	/*@GetMapping
-	public List<Funcionario> funcionariosDelisgados(Funcionario funcionarios, int mes) {
-		return funcionarioService.funcionariosDelisgados(funcionarios, mes);
-	}*/
-	
 	@GetMapping
 	// Consultar funcionários contratados em um determinado mês;
 	public List<Funcionario> funcionariosContratados() { //Funcionario funcionario
